@@ -30,7 +30,7 @@ variable "key" {
 
 variable "ami" {
   description = "Ami of EC2 instance"
-  default     = "ami-0a313d6098716f372" # Ubuntu Server 18.04 LTS
+  default     = "ami-0279c3b3186e54acd" # Ubuntu Server 18.04 LTS
 }
 
 variable "instance_type" {
