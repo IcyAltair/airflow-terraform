@@ -15,7 +15,10 @@ pipeline {
       }
     }
     stage('terraform') {
-        sh ./terraform/terraformw apply -auto-approve -no-color
+      steps {
+        sh 'chmod +x ./terraform/terraformw'
+        sh './terraform/terraformw apply -auto-approve -no-color'
+      }
     }
   }
   post {
