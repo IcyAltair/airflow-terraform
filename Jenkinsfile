@@ -16,9 +16,7 @@ pipeline {
     }
     stage('terraform') {
       steps {
-        sh 'cd terraform'
-        sh 'ls'
-        sh 'terraformw apply -auto-approve -no-color'
+        sh './terraform/terraformw apply -auto-approve -no-color'
       }
     }
   }
