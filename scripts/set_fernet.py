@@ -1,10 +1,8 @@
-import json
 import base64
-import sys
-
 import boto3
 from botocore.exceptions import ClientError
-
+import json
+import sys
 
 def get_secret(secret_name):
 
