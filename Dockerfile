@@ -69,6 +69,7 @@ COPY scripts/set_fernet.py /set_fernet.py
 COPY scripts/entrypoint.sh /entrypoint.sh
 COPY config/airflow.cfg ${AIRFLOW_HOME}/airflow.cfg
 COPY dags ${AIRFLOW_HOME}/dags
+
 #COPY plugins ${AIRFLOW_HOME}/plugins
 
 RUN chown -R airflow: ${AIRFLOW_HOME}
