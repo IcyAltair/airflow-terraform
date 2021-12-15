@@ -40,6 +40,7 @@ wait_for_port() {
 }
 
 AIRFLOW__CELERY__BROKER_URL="redis://$REDIS_PREFIX$REDIS_HOST:$REDIS_PORT/1"
+
 wait_for_port "Redis" "$REDIS_HOST" "$REDIS_PORT"
 
 case "$1" in
